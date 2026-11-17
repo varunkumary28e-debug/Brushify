@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Brushify</title>
+</head>
+<body>
+    <center>
+        <h1>Brushify</h1>
+        <br><br>
+        <div id="editor" contenteditable="true"></div>
+        <br><br><br>
+        <div id="parent">
+            <div id="child">
+                <h1>Backgroundcolor</h1>
+                <br><br>
+                <button class="bg" onclick="bgc('orange')"  style="background-color: orange;"></button>
+                <button class="bg" onclick="bgc('lightblue')" style="background-color:lightblue ;" ></button>
+                 <button class="bg" onclick="bgc('red')" style="background-color: rgb(194, 48, 70);" ></button>
+                 <button class="bg" onclick="bgc('green')" style="background-color: rgb(25, 217, 25);" ></button>
+                 <button class="bg" onclick="bgc('yellow')" style="background-color:greenyellow;" ></button>
+             </div>
+              <div id="child">
+                <h1>Textcolor</h1>
+                <br><br>
+                <button class="bg" onclick="Textcolor('Black')" style="background-color: black; "></button>
+                <button class="bg" onclick="Textcolor('yellow')" style="background-color: rgb(163, 145, 27); border: 1px solid black;"></button>
+                <button class="bg" onclick="Textcolor('green')" style="background-color: rgb(24, 157, 99);"></button>
+                <button class="bg" onclick="Textcolor('fuchsia')" style="background-color: rgb(155, 36, 155);"></button>
+                <button class="bg" onclick="Textcolor('skyblue')" style="background-color: rgb(35, 128, 164);"></button>
+            </div>
+              <div id="child">
+                <h1>FontStyle</h1>
+                <br><br>
+                <button class="fnt" onclick="font('sans-serif')" >Hey!</button>
+                 <button class="fnt" onclick="font('cursive')"    >Hey!</button>
+                <button class="fnt" onclick="font('fantasy')">Hey!</button>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        function bgc(color){
+            document.getElementById('editor').style.backgroundColor = color
+        }
+         function Textcolor(color){
+            document.getElementById('editor').style.color = color
+        }
+         function font(font){
+            document.getElementById('editor').style.fontFamily = font
+        }
+    </script>
+    
+</body>
+</html>
